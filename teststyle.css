@@ -1,0 +1,54 @@
+.clock_js {
+    font-size: 50px;
+    display: flex;
+    width: 600px;
+    justify-content: center;
+    line-height: 60px;
+    border: 3px blue solid;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#night_mode {
+    font-size: 20px;
+}
+
+input {
+    font-size: 40px;
+    border-radius: 10px;
+}
+
+form {
+    text-align: center;
+}
+
+.js_form {
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+.form , .greeting {
+    display: none;
+}
+
+.showing {
+    display: block;
+    justify-content: center;
+}
+
+h1 {
+    cursor: pointer;
+    color:aqua;
+    transition: color 1s ease-in-out;
+}
+
+.js_greeting {
+    font-size: 40px;
+    text-align: center;
+}
+
+.clocker {
+    color: red;
+}
