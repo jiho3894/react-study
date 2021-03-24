@@ -1,6 +1,6 @@
 const all = ele => document.querySelectorAll(ele) ,
- one = ele => document.querySelector(ele);
- 
+  one = ele => document.querySelector(ele);
+
 const slide = _ => {
     const wrap = one('.slide'); // .slide 선택
     const target = wrap.children[0]; // .slide ul 선택
@@ -15,7 +15,7 @@ const slide = _ => {
     setInterval(() => {
         pos = (pos + 1) % len // 장면 선택
         target.style.marginLeft = `${-pos * 100}%`
-    }, 2500)
+    }, 7000)
 }
 
 window.onload = function () {
