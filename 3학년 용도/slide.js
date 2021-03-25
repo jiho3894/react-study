@@ -6,7 +6,11 @@ const slide = _ => {
     const target = wrap.children[0]; // .slide ul 선택
     const len = target.children.length; // .slide li 갯수
     // .slide ul의 너비 조정
-    target.style.cssText = `width:calc(100% * ${len});display:flex;transition:1s`
+    target.style.cssText = `
+      width:calc(100% * ${len});
+      display:flex;
+      transition:1s;
+    `
     // .slide li의 너비 조정
     Array.from(target.children)
     .forEach(ele => ele.style.cssText = `width:calc(100% / ${len});`)

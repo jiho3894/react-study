@@ -3,18 +3,32 @@
     padding:0;
 }
 
-header {
+.menubar {
     line-height: 50px;
-}
-
-.menu {
-    display: flex;
-    position: fixed;
+    background-color: aquamarine;
     text-align: center;
     justify-content: center;
-    background-color: aquamarine;
+    display: flex;
+    position: fixed;
     width: 100%;
     z-index: 3;
+}
+
+.menu .fas{
+    font-size: 35px;
+    padding-right: 15px;
+    margin-top: 7px;
+}
+
+.menu > a {
+    text-decoration: none;
+    color: black;
+}
+
+.role {
+    position: absolute;
+    right: 0;
+    padding-right: 30px;
 }
 
 li{
@@ -45,13 +59,13 @@ img {
 }
 
 .slide li:nth-child(2){
-    background:yellow;
+    background:black;
 }
 
 .slide li:nth-child(3){
-    background:green;
+    background:black;
 }
 
 .slide li:nth-child(4){
-    background:blue;
+    background:black;
 }
