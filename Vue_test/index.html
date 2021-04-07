@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app1">
+    {{ message }}
+  </div>
+  <div id="app2">
+    <span v-bind:title="message">
+      마우스를 올리면 시간이 나와요
+    </span>
+  </div>
+  <div id="app3">
+    <p v-if="seen"> {{message}} </p>
+  </div>
+  <div id="app4">
+    <ol>
+      <li v-for="todo in todos">
+        {{ todo.text }}
+      </li>
+    </ol>
+  </div>
+  <div id="app5">
+    <p> {{ message }}</p>
+    <button v-on:click="reverseMessage">메세지 뒤집기</button>
+  </div>
+  <div id="app6">
+    <p>{{ message }}</p>
+    <input v-model="message">
+  </div>
+  <div id="app7">
+    <ol>
+      <li> {{ message }}</li>
+      <todo-item></todo-item>
+      <todo-item></todo-item>
+    </ol>
+  </div>
+  <script src="vue.js"></script>
+</body>
+</html>
